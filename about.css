@@ -1,0 +1,79 @@
+body{
+background-color:pink;
+
+}
+p{
+	color: hotPink;
+	text-align:center;
+	font-size:18xpx;
+}
+h1{
+	color:mediumseagreen;
+	text-align:center;
+	text-shadow:2px 2px pink;
+}
+
+	
+
+.vibrating-text {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+@keyframes shake {
+  0% {transform: translate(0);}
+  20% {transform: translate(-2px, 2px);}
+  40% {transform: translate(-2px, -2px);}
+  60% {transform: translate(2px, 2px);}
+  80% {transform: translate(2px, -2px);}
+  100% {transform: translate(0);}
+}
+
+	*{
+	margin:0;
+	padding:0;
+	background: mediumseagreen:
+	font-family: Arial;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	background-color:mediumseagreen;
+}
+	
+ ul{
+	margin-left:60px;
+}
+ul li{
+		display: inline-block;
+		life-style: none;
+		float: left;
+		line-height: 100px;
+	}
+ul li a{
+	display:block;
+	text-decoration: none;
+    font-family:arial;
+	font-size: 15px;
+	color: #1e1e1e;
+	padding: 0px 20px;
+}
+
+ul li a:hover{
+	background-color: pink;
+	color:green;
+}
+	img{
+		padding:60;
+		position:center;
+		margin:70;
+	}
+		
+		
+		
+		
+		
+		
+		
+
+

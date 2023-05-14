@@ -1,0 +1,143 @@
+<html>
+<head>
+  <title>Contact Us</title>
+<link rel= "stylesheet" href="style.css">
+
+  <nav>
+	<ul>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/homepage.html# ">Home</a></li>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/aboutus.html">About</a></li>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/drinks.html">Drinks</a></li>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/sweets.html">Sweets</a></li>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/allergins.html">Allergins</a></li>
+	<li><a href = "#">Location</a></li>
+	<li><a href = "file:///C:/Users/aljuh/OneDrive/Desktop/CS201%20PROJECT/complaints.html">Contact us</a></li>
+	  </nav>
+	  </ul>
+	  
+	</div>
+	  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-color: pink;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: hotPink;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 4px;
+      border: 1px solid grey;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: pink;
+      color: lightgreen;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: lightgreen;
+    }
+
+    .complaints, .suggestions {
+      display: none;
+    }
+
+    .complaints-header, .suggestions-header {
+      color: lightgreen;
+      cursor: pointer;
+    }
+
+    .complaints-panel, .suggestions-panel {
+      padding: 16px;
+      background-color: pink;
+      border: 1px solid white;
+      margin-top: 16px;
+    }
+
+    .complaints-panel ul, .suggestions-panel ul {
+      padding: 0;
+    }
+
+    .complaints-panel li, .suggestions-panel li {
+      list-style: none;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Us</h1>
+
+  <form action="#" method="post">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name here" required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email here" required>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number here">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="So matcha excited to hear from you" style="height:200px" required></textarea>
+
+    <div class="complaints-header" onclick="toggleComplaints()">Complaints</div>
+    <div class="complaints-panel">
+   
+    </div>
+
+    <div class="suggestions-header" onclick="toggleSuggestions()">Suggestions</div>
+    <div class="suggestions-panel">
+
+    </div>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <script>
+    function toggleComplaints() {
+      var complaintsPanel = document.querySelector(".complaints-panel");
+      if (complaintsPanel.style.display === "none") {
+        complaintsPanel.style.display = "block";
+      } else {
+        complaintsPanel.style.display = "none";
+      }
+    }
+
+    function toggleSuggestions() {
+      var suggestionsPanel = document.querySelector(".suggestions-panel");
+      if (suggestionsPanel.style.display === "none") {
+        suggestionsPanel.style.display = "block";
+      } else {
+        suggestionsPanel.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

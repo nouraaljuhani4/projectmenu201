@@ -1,0 +1,69 @@
+.icon {
+  animation: moveIcons 2s infinite linear;
+}
+
+@keyframes moveIcons {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+h1{
+	padding:10;
+	text-align:center;
+}
+*{
+	margin:0;
+	padding:0;
+	background: mediumseagreen:
+	font-family: Arial;
+}
+body{
+background-color:pink;
+}
+nav{
+	width: 100%;
+	height: 100px;
+	background-color:mediumseagreen;
+}
+	
+ ul{
+	margin-left:60px;
+}
+ul li{
+		display: inline-block;
+		life-style: none;
+		float: left;
+		line-height: 100px;
+	}
+ul li a{
+	display:block;
+	text-decoration: none;
+    font-family:arial;
+	font-size: 15px;
+	color: #1e1e1e;
+	padding: 0px 20px;
+}
+
+ul li a:hover{
+	background-color: pink;
+	color:green;
+}
+.allergen-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('allergen-icon.png');
+  background-size: contain;
+}
+
+.may-contain {
+  background-position: 0 0;
+}
+
+.contains {
+  background-position: -16px 0;
+}
+
+.free {
+  background-position: -32px 0;
+}
